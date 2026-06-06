@@ -494,3 +494,12 @@ body{
     }
 
 }
+@media (max-width:768px){
+
+    .nombre-del-producto{
+        font-size:1.4rem;
+        width:90%;
+        white-space:normal;
+    }
+
+}
