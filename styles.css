@@ -1,0 +1,404 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+section{
+    text-align: center;
+}
+
+img{
+    border-radius: 10px;
+}
+.Pedidos{
+    color: rgb(214, 96, 96);
+}
+.redes{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.redes a{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:32px;
+
+    background-color:#2a2a2a;
+    color:white;
+
+    transition:0.3s;
+}
+
+.redes a:hover{
+    transform:scale(1.1);
+}
+
+.whatsapp:hover{
+    background-color:#25D366;
+}
+
+.instagram:hover{
+    background:linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+}
+
+
+.producto img{
+    width:100%;
+}
+
+.producto:hover{
+    transform:translateY(-10px);
+}.producto{
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    background:white;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    transition:all 0.3s ease;
+}
+
+.producto:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2),
+        0 0 25px rgba(126, 77, 243, 0.4);
+}
+.producto img{
+    width:100%;
+    height:300px;
+    object-fit:contain;
+    border-radius:10px;
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.productos{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+.producto{
+    display:flex;
+    flex-direction:column;
+
+}
+.boton{
+    display:inline-block;
+    padding:12px 25px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+
+    transition:all 0.3s ease;
+}
+
+.boton:hover{
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+.boton{
+    display:inline-block;
+    padding:12px 25px;
+    background:#111;
+    color:white;
+    text-decoration:none;
+    border-radius:14px;
+
+    transition:all 0.3s ease;
+
+    box-shadow:
+        0 0 5px rgba(0,0,0,0.5),
+        0 0 15px rgba(0,0,0,0.3);
+}
+header{
+    text-align:center;
+    padding:40px 20px;
+
+    background:linear-gradient(
+        180deg,
+        #000000,
+        #12061f,
+        #000000
+    );
+
+    color:white;
+
+    border-bottom:2px solid #5b21b6;
+}
+header h1{
+    font-size:3rem;
+    margin:0;
+
+    text-shadow:
+        0 0 10px rgba(139,92,246,0.5),
+        0 0 20px rgba(139,92,246,0.3);
+}
+header{
+    position: relative;
+
+    text-align:center;
+    padding:40px 20px;
+
+    background:linear-gradient(
+        180deg,
+        #000000,
+        #12061f,
+        #000000
+    );
+
+    color:white;
+}
+header::before{
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-image:url("../imagenes/estrellas_fondo_superior.png");
+    background-size:cover;
+    background-position:center;
+
+    opacity:1;
+
+    pointer-events:none;
+}
+#encargar-pedidos{
+    scroll-margin-top:120px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#encargar-pedidos{
+    scroll-margin-top:120px;
+    padding-bottom:200px;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.producto{
+    position: relative;
+
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.boton:hover{
+    background: linear-gradient(
+        45deg,
+        #25D366,
+        #bc1888
+    );
+}
+body{
+    background:
+        radial-gradient(circle at top,
+            rgba(139,192,246,0.8),
+            transparent 40%),
+        #f5f5f5;
+}
+nav{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+.precio{
+    font-size:1.2rem;
+    color:#59585b;
+    
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+.precio-paginas{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.precio-paginas span{
+    font-size: 1rem;
+    color: gray;
+}
+.descripcion{
+    max-width:800px;
+    margin:auto;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    
+}
+.volver{
+    display:inline-block;
+    margin:20px;
+    text-decoration:none;
+    color:#8b5cf6;
+    font-weight:bold;
+}
+.volver-boton{
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#111;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:all 0.3s ease;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.15);
+}
+
+.volver-boton:hover{
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        45deg,
+        #6d28d9,
+        #8b5cf6
+    );
+
+    box-shadow:
+        0 0 20px rgba(139,92,246,0.4);
+}
+.volver-container{
+    margin:40px 0 0 20px;
+    text-align:left;
+}
+
+.volver-boton{
+    display:inline-block;
+    padding:12px 30px;
+}
+.galeria-producto{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:25px;
+
+    width:100%;
+    max-width:1400px;
+    margin:40px auto 0;
+    padding:0 20px;
+}
+
+.miniaturas{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width:120px;
+}
+
+.miniaturas img{
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    cursor:pointer;
+    border-radius:12px;
+}
+
+.foto-principal{
+    width:650px;
+    height:650px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.galeria-producto{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    align-items:flex-start;
+}
+.info-abajo{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:50px;
+
+    margin-top:40px;
+}
+
+.info-producto{
+    width:400px;
+    margin-left:30px;
+}
+.descripcion{
+    width:600px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.nombre-gorras{
+     width:100%;
+    padding-left:30px;
+
+    white-space: nowrap;
+}
+.crystal{
+    height:561px;
+}

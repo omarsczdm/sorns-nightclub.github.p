@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crystals Black</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+        <h1>SORNS Nightclub</h1>
+        <p>Las mejores gorrras y ropa de la mas alta calidad, completamente originales.</p>
+    </header>
+
+<h2 class="nombre-gorras">INNEDIT Muratravis Cristal Negro Edición Limitada Hombre Snapback</h2>
+
+<div class="galeria-producto">
+
+    <div class="miniaturas">
+
+        <img src="imagenes/crystal_black.png"
+        onclick="cambiarImagen(this)">
+
+<img src="imagenes/crystal_black_lado.webp" 
+ onclick="cambiarImagen(this)">
+
+    <img src="imagenes/crystal_black_back.webp"
+    onclick="cambiarImagen(this)">
+
+    <img src="imagenes/crystal_black_down.png" 
+    onclick="cambiarImagen(this)">
+    <img src="imagenes/crystal_black_full.png" 
+     onclick="cambiarImagen(this)">
+    </div>
+
+        <img
+    id="principal"
+    class="foto-principal crystal"
+    src="imagenes/crystal_black.png">
+</div>
+
+<div class="info-abajo">
+
+     <div class="info-producto">
+    
+        <h2>INNEDIT MURATRAVIS CYSTAL BLACK</h2>
+
+        <p class="precio-paginas">
+
+             $1,600.00 <span>MXN</span>
+        </p>
+         <div class="etiquetas">
+            <p>✓ 100% Original</p>
+            <p>✓ Edición Limitada</p>
+            <p>✓ Incluye Certificado</p>
+            <p>✓ Con Chip NFC</p>
+            <p>✓ Envios a toda la República Mexicana</p>
+            <p>✓ Entregas personales en Cuitláhuac, Córdoba y alrededores</p>
+        </div>
+     </div>
+
+
+<div class="descripcion">
+            <h3>Descripción</h3>
+            <p>Esta gorra se destaca por su diseño tan icónico, con unos colores vibrantes que la hacen única. 
+            Además de su diseño, esta gorra es completamente original, te la entregamos con su respectiva caja, cubre polvo y certificado de autenticidad. 
+            Sin olvidar que tiene chip NFC para comprobar su autenticidad, y que es de edición limitada, por lo que no se volverá a fabricar. Es una pieza de colección que no puede faltar en tu armario. 
+            Por favor asegúrate de contactarte al grupo de WhatsApp o a nuestra página de Instagram.</p>
+        </div>
+
+    </div> 
+
+  <div class="volver-container">
+    <a href="index.html" class="volver-boton">
+        ← Volver al catálogo
+    </a>
+</div>
+
+    <section id="encargar-pedidos">
+        <h2>Encargar Pedidos</h2>
+        <div class="redes">
+            <a href="https://chat.whatsapp.com/EMXRWHgowvvIhvLs0ZWQHH" target="_blank" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/nightclub_09/" target="_blank" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script>
+    function cambiarImagen(imagen){
+        document.getElementById("principal").src = imagen.src;
+    }
+    </script>
+</body>
+</html>
