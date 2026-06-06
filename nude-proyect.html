@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nude Proyect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+        <h1>SORNS Nightclub</h1>
+        <p>Las mejores gorrras y ropa de la mas alta calidad, completamente originales.</p>
+    </header>
+
+<h2 class="nombre-gorras">Nude Project Jarron White</h2>
+
+<div class="galeria-producto">
+
+    <div class="miniaturas">
+
+        <img src="imagenes/Camisa1_frontal.png"
+        onclick="cambiarImagen(this)">
+
+<img src="imagenes/Camisa1_back.png" 
+ onclick="cambiarImagen(this)">
+
+   
+    </div>
+
+        <img
+    id="principal"
+    class="foto-principal"
+    src="imagenes/Camisa1_frontal.png">
+</div>
+
+<div class="info-abajo">
+
+     <div class="info-producto">
+    
+        <h2>Nude Project Jarron White</h2>
+
+        <p class="precio-paginas">
+
+             $640.00 <span>MXN</span>
+        </p>
+         <div class="etiquetas">
+            <p>✓ 100% original</p>
+            <p>✓ Envios a toda la República Mexicana</p>
+            <p>✓ Entregas personales en Cuitláhuac, Córdoba y alrededores</p>
+        </div>
+     </div>
+
+
+<div class="descripcion">
+            <h3>Descripción</h3>
+            <p>Esta camisa es completamente fresca con un estilo minimalista que no deja que desear, ademas de su diseño tan limpio la textura de la camisa esta hecha con el mejor material, con unos bordados impresionantes, asegurate de pedirla por nuestro grupo de Whatsapp o mediente Instagram.</p>
+        </div>
+
+    </div> 
+
+  <div class="volver-container">
+    <a href="index.html" class="volver-boton">
+        ← Volver al catálogo
+    </a>
+</div>
+
+    <section id="encargar-pedidos">
+        <h2>Encargar Pedidos</h2>
+        <div class="redes">
+            <a href="https://chat.whatsapp.com/EMXRWHgowvvIhvLs0ZWQHH" target="_blank" class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/nightclub_09/" target="_blank" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script>
+    function cambiarImagen(imagen){
+        document.getElementById("principal").src = imagen.src;
+    }
+    </script>
+</body>
+</html>
