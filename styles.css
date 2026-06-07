@@ -675,12 +675,12 @@ nav i{
 
     -webkit-overflow-scrolling:auto;
 }
-.miniaturas{
+div{
     scrollbar-width:none;
     -ms-overflow-style:none;
 }
 
-.miniaturas::-webkit-scrollbar{
+div::-webkit-scrollbar{
     display:none;
 }
 
