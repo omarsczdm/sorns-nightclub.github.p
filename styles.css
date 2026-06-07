@@ -26,7 +26,13 @@ img{
     border-radius: 10px;
 }
 .Pedidos{
-    color: rgb(214, 96, 96);
+    color: rgb(22, 66, 143);
+}
+.Ropa{
+    color: rgb(22, 66, 143);
+}
+.GorrasIn{
+    color: rgb(22, 66, 143);
 }
 .redes{
     display:flex;
@@ -553,4 +559,58 @@ body{
 
 .boton{
     margin-top: auto;
+}
+nav{
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    padding:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    margin:0 25px;
+    padding:10px 20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#8b5cf6;
+    color:white;
+}
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    margin:0 25px;
+}
+
+nav i{
+    margin-right:8px;
+}
+@media (max-width:768px){
+
+    nav{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+        flex-wrap:wrap;
+        padding:15px 10px;
+    }
+
+    nav a{
+        font-size:0.9rem;
+        margin:0;
+        padding:10px 15px;
+    }
+
+    nav i{
+        margin-right:5px;
+    }
+}
+*{
+    -webkit-tap-highlight-color: transparent;
 }
