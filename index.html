@@ -31,6 +31,7 @@
 </nav>
 <section id="Gorras-destacadas">
     <h2>Gorras Destacadas</h2>
+    <div class="productos-carrusel">
     <div class="productos">
 
         <div class="producto">
@@ -56,10 +57,15 @@
 </a>
 </div>
 </div>
+<button class="productos-flecha" type="button" aria-label="Ver mas productos">
+    <i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
 </section>
 <section id="seccion-ropa">
     <h2>Ropa</h2>
 
+    <div class="productos-carrusel">
     <div class="productos">
 
         <div class="producto">
@@ -124,8 +130,10 @@
     </a>
     </div>
     </div>
-</section>
-</section>
+    <button class="productos-flecha" type="button" aria-label="Ver mas productos">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    </div>
 </section>
     
 
@@ -142,6 +150,30 @@
         </a>
     </div>
 </section>
+
+<script>
+    document.querySelectorAll(".productos-carrusel").forEach((carrusel) => {
+        const productos = carrusel.querySelector(".productos");
+        const flecha = carrusel.querySelector(".productos-flecha");
+
+        const actualizarFlecha = () => {
+            const quedaContenido = productos.scrollLeft + productos.clientWidth < productos.scrollWidth - 8;
+            flecha.classList.toggle("productos-flecha--oculta", !quedaContenido);
+            carrusel.classList.toggle("productos-carrusel--final", !quedaContenido);
+        };
+
+        flecha.addEventListener("click", () => {
+            productos.scrollBy({
+                left: productos.clientWidth * 0.85,
+                behavior: "smooth"
+            });
+        });
+
+        productos.addEventListener("scroll", actualizarFlecha, { passive: true });
+        window.addEventListener("resize", actualizarFlecha);
+        actualizarFlecha();
+    });
+</script>
 
 </body>
 </html>
